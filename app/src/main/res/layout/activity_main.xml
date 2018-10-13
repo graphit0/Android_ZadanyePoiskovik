@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framely">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/button_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Настройки" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Поиск" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выход" />
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shown_fragment"
+            class="com.example.matee.homework1.ByDefault"
+            ><!-- android:name="com.example.matee.homework1.Configuration"
+            tools:layout="@layout/fragment_configuration"-->
+        </fragment>
+
+    </LinearLayout>
+
+</FrameLayout>
